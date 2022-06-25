@@ -7,23 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9533A9D32867992600C52CFF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9533A9D22867992600C52CFF /* Constants.swift */; };
+		9534282328665125000DD6A7 /* Orientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9534282228665125000DD6A7 /* Orientation.swift */; };
+		9534282628665F03000DD6A7 /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9534282528665F03000DD6A7 /* DeviceKit */; };
 		95A1D7B8285E821400C4561D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A1D7B7285E821400C4561D /* AppDelegate.swift */; };
 		95A1D7BA285E821400C4561D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A1D7B9285E821400C4561D /* SceneDelegate.swift */; };
 		95A1D7BC285E821400C4561D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A1D7BB285E821400C4561D /* ViewController.swift */; };
 		95A1D7BF285E821400C4561D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95A1D7BD285E821400C4561D /* Main.storyboard */; };
-		95A1D7C1285E821700C4561D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95A1D7C0285E821700C4561D /* Assets.xcassets */; };
 		95A1D7C4285E821700C4561D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95A1D7C2285E821700C4561D /* LaunchScreen.storyboard */; };
+		95EAED7328677FBC00DECC22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95EAED7228677FBC00DECC22 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9533A9D22867992600C52CFF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9534282228665125000DD6A7 /* Orientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Orientation.swift; sourceTree = "<group>"; };
 		95A1D7B4285E821400C4561D /* VideoGameTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoGameTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95A1D7B7285E821400C4561D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95A1D7B9285E821400C4561D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		95A1D7BB285E821400C4561D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		95A1D7BE285E821400C4561D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		95A1D7C0285E821700C4561D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95A1D7C3285E821700C4561D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95A1D7C5285E821700C4561D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95EAED7228677FBC00DECC22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,12 +36,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9534282628665F03000DD6A7 /* DeviceKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		953428212866510D000DD6A7 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				9534282228665125000DD6A7 /* Orientation.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		95A1D7AB285E821400C4561D = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +70,15 @@
 		95A1D7B6285E821400C4561D /* VideoGameTracker */ = {
 			isa = PBXGroup;
 			children = (
+				953428212866510D000DD6A7 /* Utility */,
 				95A1D7B7285E821400C4561D /* AppDelegate.swift */,
 				95A1D7B9285E821400C4561D /* SceneDelegate.swift */,
 				95A1D7BB285E821400C4561D /* ViewController.swift */,
 				95A1D7BD285E821400C4561D /* Main.storyboard */,
-				95A1D7C0285E821700C4561D /* Assets.xcassets */,
 				95A1D7C2285E821700C4561D /* LaunchScreen.storyboard */,
+				95EAED7228677FBC00DECC22 /* Assets.xcassets */,
 				95A1D7C5285E821700C4561D /* Info.plist */,
+				9533A9D22867992600C52CFF /* Constants.swift */,
 			);
 			path = VideoGameTracker;
 			sourceTree = "<group>";
@@ -83,6 +99,9 @@
 			dependencies = (
 			);
 			name = VideoGameTracker;
+			packageProductDependencies = (
+				9534282528665F03000DD6A7 /* DeviceKit */,
+			);
 			productName = VideoGameTracker;
 			productReference = 95A1D7B4285E821400C4561D /* VideoGameTracker.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +130,9 @@
 				Base,
 			);
 			mainGroup = 95A1D7AB285E821400C4561D;
+			packageReferences = (
+				9534282428665F03000DD6A7 /* XCRemoteSwiftPackageReference "DeviceKit" */,
+			);
 			productRefGroup = 95A1D7B5285E821400C4561D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,7 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				95A1D7C4285E821700C4561D /* LaunchScreen.storyboard in Resources */,
-				95A1D7C1285E821700C4561D /* Assets.xcassets in Resources */,
+				95EAED7328677FBC00DECC22 /* Assets.xcassets in Resources */,
 				95A1D7BF285E821400C4561D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +160,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9533A9D32867992600C52CFF /* Constants.swift in Sources */,
+				9534282328665125000DD6A7 /* Orientation.swift in Sources */,
 				95A1D7BC285E821400C4561D /* ViewController.swift in Sources */,
 				95A1D7B8285E821400C4561D /* AppDelegate.swift in Sources */,
 				95A1D7BA285E821400C4561D /* SceneDelegate.swift in Sources */,
@@ -296,7 +320,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -324,7 +348,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -360,6 +384,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9534282428665F03000DD6A7 /* XCRemoteSwiftPackageReference "DeviceKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devicekit/DeviceKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9534282528665F03000DD6A7 /* DeviceKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9534282428665F03000DD6A7 /* XCRemoteSwiftPackageReference "DeviceKit" */;
+			productName = DeviceKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 95A1D7AC285E821400C4561D /* Project object */;
 }
