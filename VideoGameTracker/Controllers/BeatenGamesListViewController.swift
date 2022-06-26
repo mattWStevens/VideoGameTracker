@@ -8,11 +8,16 @@
 import UIKit
 
 class BeatenGamesListViewController: UIViewController {
-
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var beatenGamesCountLabel: UILabel!
+    @IBOutlet weak var addNewGameButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        titleLabel.text = K.LabelStrings.beatenGames
+        beatenGamesCountLabel.textColor = UIColor(named: K.BrandColors.midnightPurple)
+        addNewGameButton.backgroundColor = UIColor(named: K.BrandColors.basePurple)
+        addNewGameButton.tintColor = UIColor(named: K.BrandColors.basePurple)
     }
     
 

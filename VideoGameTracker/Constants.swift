@@ -20,6 +20,7 @@ struct K {
     struct LabelStrings {
         static let beatenGames = "Beaten Games"
         static let wishList = "Wish List"
+        static let addNewGameButton = "Add New Game"
     }
     
     struct Segues {
