@@ -21,4 +21,8 @@ struct K {
         static let beatenGames = "Beaten Games"
         static let wishList = "Wish List"
     }
+    
+    struct Segues {
+        static let segueEntryToGames = "entryToBeatenGames"
+    }
 }

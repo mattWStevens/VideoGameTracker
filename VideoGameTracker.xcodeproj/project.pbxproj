@@ -12,9 +12,10 @@
 		9534282628665F03000DD6A7 /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9534282528665F03000DD6A7 /* DeviceKit */; };
 		95A1D7B8285E821400C4561D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A1D7B7285E821400C4561D /* AppDelegate.swift */; };
 		95A1D7BA285E821400C4561D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A1D7B9285E821400C4561D /* SceneDelegate.swift */; };
-		95A1D7BC285E821400C4561D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A1D7BB285E821400C4561D /* ViewController.swift */; };
+		95A1D7BC285E821400C4561D /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A1D7BB285E821400C4561D /* EntryViewController.swift */; };
 		95A1D7BF285E821400C4561D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95A1D7BD285E821400C4561D /* Main.storyboard */; };
 		95A1D7C4285E821700C4561D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95A1D7C2285E821700C4561D /* LaunchScreen.storyboard */; };
+		95BB7BCE2868C7CA003DCAF9 /* BeatenGamesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BB7BCD2868C7CA003DCAF9 /* BeatenGamesListViewController.swift */; };
 		95EAED7328677FBC00DECC22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95EAED7228677FBC00DECC22 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -24,10 +25,11 @@
 		95A1D7B4285E821400C4561D /* VideoGameTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoGameTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95A1D7B7285E821400C4561D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95A1D7B9285E821400C4561D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		95A1D7BB285E821400C4561D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		95A1D7BB285E821400C4561D /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
 		95A1D7BE285E821400C4561D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		95A1D7C3285E821700C4561D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95A1D7C5285E821700C4561D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95BB7BCD2868C7CA003DCAF9 /* BeatenGamesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeatenGamesListViewController.swift; sourceTree = "<group>"; };
 		95EAED7228677FBC00DECC22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,17 +72,42 @@
 		95A1D7B6285E821400C4561D /* VideoGameTracker */ = {
 			isa = PBXGroup;
 			children = (
+				95BB7BCC2868C6F1003DCAF9 /* Controllers */,
+				95BB7BCB2868C6E9003DCAF9 /* Views */,
+				95BB7BCA2868C6E1003DCAF9 /* Models */,
 				953428212866510D000DD6A7 /* Utility */,
 				95A1D7B7285E821400C4561D /* AppDelegate.swift */,
 				95A1D7B9285E821400C4561D /* SceneDelegate.swift */,
-				95A1D7BB285E821400C4561D /* ViewController.swift */,
-				95A1D7BD285E821400C4561D /* Main.storyboard */,
-				95A1D7C2285E821700C4561D /* LaunchScreen.storyboard */,
 				95EAED7228677FBC00DECC22 /* Assets.xcassets */,
 				95A1D7C5285E821700C4561D /* Info.plist */,
 				9533A9D22867992600C52CFF /* Constants.swift */,
 			);
 			path = VideoGameTracker;
+			sourceTree = "<group>";
+		};
+		95BB7BCA2868C6E1003DCAF9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		95BB7BCB2868C6E9003DCAF9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				95A1D7BD285E821400C4561D /* Main.storyboard */,
+				95A1D7C2285E821700C4561D /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		95BB7BCC2868C6F1003DCAF9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				95A1D7BB285E821400C4561D /* EntryViewController.swift */,
+				95BB7BCD2868C7CA003DCAF9 /* BeatenGamesListViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,7 +189,8 @@
 			files = (
 				9533A9D32867992600C52CFF /* Constants.swift in Sources */,
 				9534282328665125000DD6A7 /* Orientation.swift in Sources */,
-				95A1D7BC285E821400C4561D /* ViewController.swift in Sources */,
+				95A1D7BC285E821400C4561D /* EntryViewController.swift in Sources */,
+				95BB7BCE2868C7CA003DCAF9 /* BeatenGamesListViewController.swift in Sources */,
 				95A1D7B8285E821400C4561D /* AppDelegate.swift in Sources */,
 				95A1D7BA285E821400C4561D /* SceneDelegate.swift in Sources */,
 			);

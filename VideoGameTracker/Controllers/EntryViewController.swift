@@ -8,7 +8,7 @@
 import UIKit
 import DeviceKit
 
-class ViewController: UIViewController {
+class EntryViewController: UIViewController {
     @IBOutlet weak var checkmarkImage: UIImageView!
     @IBOutlet weak var beatenGamesLabel: UILabel!
     @IBOutlet weak var wishListLabel: UILabel!

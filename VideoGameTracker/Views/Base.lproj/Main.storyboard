@@ -5,13 +5,14 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Entry View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VideoGameTracker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="EntryViewController" customModule="VideoGameTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -141,11 +142,28 @@
                         <outlet property="checkmarkImage" destination="SHe-WR-kfn" id="dWv-qk-Hlh"/>
                         <outlet property="wishListButton" destination="rLG-5S-IWB" id="e3z-Kl-QDK"/>
                         <outlet property="wishListLabel" destination="ewF-fF-u62" id="8Vd-LX-qHc"/>
+                        <segue destination="P7c-a7-Vnq" kind="show" identifier="entryToBeatenGames" id="V7b-Bo-Gz0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="18.46153846153846" y="70.379146919431278"/>
+        </scene>
+        <!--Beaten Games List View Controller-->
+        <scene sceneID="HUL-Yn-4Ek">
+            <objects>
+                <viewController id="P7c-a7-Vnq" customClass="BeatenGamesListViewController" customModule="VideoGameTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fWi-hx-lhg">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="95u-GZ-PMD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vD0-KE-Bx9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M9f-ob-5eA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1052" y="70"/>
         </scene>
     </scenes>
     <resources>
@@ -157,5 +175,8 @@
         <namedColor name="MidnightPurple">
             <color red="0.10999999940395355" green="0.046999998390674591" blue="0.35699999332427979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
