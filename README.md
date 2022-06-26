@@ -97,6 +97,7 @@ Project Link: [https://github.com/mattWStevens/VideoGameTracker](https://github.
 ## Acknowledgments
 
 * [Wishlist icons created by Freepik - Flaticon](https://www.flaticon.com/free-icons/wishlist)
+* [Trophy icons created by Freepik - Flaticon](https://www.flaticon.com/free-icons/trophy)
 * [README Template](https://github.com/othneildrew/Best-README-Template)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
