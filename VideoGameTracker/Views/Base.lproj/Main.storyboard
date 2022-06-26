@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wcX-yD-kcK">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
@@ -18,30 +18,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="68M-WE-9Bb">
-                                <rect key="frame" x="0.0" y="104" width="390" height="646"/>
+                                <rect key="frame" x="0.0" y="148" width="390" height="602"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RZf-Us-Qv5" userLabel="BeatenGamesView">
-                                        <rect key="frame" x="0.0" y="0.0" width="390" height="323"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="301"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x4V-DD-BQc" userLabel="ButtonAreaView">
-                                                <rect key="frame" x="74" y="60" width="242" height="203"/>
+                                                <rect key="frame" x="74" y="60" width="242" height="181"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FDn-vN-6bz">
-                                                        <rect key="frame" x="0.0" y="0.0" width="242" height="203"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="242" height="181"/>
                                                         <color key="backgroundColor" name="Mauve"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain">
                                                             <backgroundConfiguration key="background"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <segue destination="P7c-a7-Vnq" kind="show" identifier="" id="5Tk-NP-PsJ"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beaten Games" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xyz-Tu-REM">
-                                                        <rect key="frame" x="18" y="158.66666666666669" width="206" height="36.333333333333343"/>
+                                                        <rect key="frame" x="18" y="136.66666666666669" width="206" height="36.333333333333343"/>
                                                         <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="32"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark" translatesAutoresizingMaskIntoConstraints="NO" id="SHe-WR-kfn">
-                                                        <rect key="frame" x="-302" y="78.333333333333343" width="846" height="72"/>
+                                                        <rect key="frame" x="-302" y="56.333333333333314" width="846" height="72"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" relation="lessThanOrEqual" constant="72" id="uaj-wC-6VE"/>
                                                             <constraint firstAttribute="width" relation="lessThanOrEqual" constant="870" id="z3Y-nk-5c4"/>
@@ -72,13 +75,13 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kE6-4F-JTv" userLabel="WishListView">
-                                        <rect key="frame" x="0.0" y="323" width="390" height="323"/>
+                                        <rect key="frame" x="0.0" y="301" width="390" height="301"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M6w-FV-cA7" userLabel="ButtonAreaView">
-                                                <rect key="frame" x="74" y="60" width="242" height="203"/>
+                                                <rect key="frame" x="74" y="60" width="242" height="181"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rLG-5S-IWB">
-                                                        <rect key="frame" x="0.0" y="0.0" width="242" height="203"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="242" height="181"/>
                                                         <color key="backgroundColor" name="Mauve"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain">
@@ -86,13 +89,13 @@
                                                         </buttonConfiguration>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wish list" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ewF-fF-u62">
-                                                        <rect key="frame" x="18" y="158.66666666666663" width="206" height="36.333333333333343"/>
+                                                        <rect key="frame" x="18" y="136.66666666666663" width="206" height="36.333333333333343"/>
                                                         <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="32"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wishlist" translatesAutoresizingMaskIntoConstraints="NO" id="PCF-tr-FkO">
-                                                        <rect key="frame" x="-302" y="78.333333333333371" width="846" height="72"/>
+                                                        <rect key="frame" x="-302" y="56.333333333333371" width="846" height="72"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="lessThanOrEqual" constant="870" id="6pb-k6-tvN"/>
                                                             <constraint firstAttribute="height" relation="lessThanOrEqual" constant="72" id="eew-0y-5lZ"/>
@@ -135,6 +138,7 @@
                             <constraint firstItem="68M-WE-9Bb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rbp-ft-w0F"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Duy-jt-Zst"/>
                     <connections>
                         <outlet property="beatenGamesButton" destination="FDn-vN-6bz" id="CKc-X1-VOH"/>
                         <outlet property="beatenGamesLabel" destination="xyz-Tu-REM" id="HOh-AM-eLc"/>
@@ -142,19 +146,18 @@
                         <outlet property="checkmarkImage" destination="SHe-WR-kfn" id="dWv-qk-Hlh"/>
                         <outlet property="wishListButton" destination="rLG-5S-IWB" id="e3z-Kl-QDK"/>
                         <outlet property="wishListLabel" destination="ewF-fF-u62" id="8Vd-LX-qHc"/>
-                        <segue destination="P7c-a7-Vnq" kind="show" identifier="entryToBeatenGames" id="V7b-Bo-Gz0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18.46153846153846" y="70.379146919431278"/>
+            <point key="canvasLocation" x="947.69230769230762" y="70.379146919431278"/>
         </scene>
         <!--Beaten Games List View Controller-->
         <scene sceneID="HUL-Yn-4Ek">
             <objects>
                 <viewController id="P7c-a7-Vnq" customClass="BeatenGamesListViewController" customModule="VideoGameTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fWi-hx-lhg">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="95u-GZ-PMD"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -163,7 +166,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M9f-ob-5eA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1052" y="70"/>
+            <point key="canvasLocation" x="1980" y="69.66824644549763"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Kjc-Ul-BUL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wcX-yD-kcK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hRb-cA-K71">
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="hxo-p7-ceW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ope-bK-KZw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.46153846153846" y="70.379146919431278"/>
         </scene>
     </scenes>
     <resources>

@@ -19,7 +19,6 @@ class EntryViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         self.checkmarkImage.clipsToBounds = true
         specialDevice = determineIfSpecial()
         
@@ -31,6 +30,16 @@ class EntryViewController: UIViewController {
         
         // Listen for orientation change.
         NotificationCenter.default.addObserver(self, selector: #selector(orientationChanged), name:  Notification.Name("UIDeviceOrientationDidChangeNotification"), object: nil)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.isHidden = true
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.navigationBar.isHidden = false
     }
     
     @objc func orientationChanged() {
