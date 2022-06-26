@@ -65,6 +65,7 @@
 * [Canva](https://www.canva.com)
 * [appicon.co](https://appicon.co)
 * [DeviceKit](https://github.com/devicekit/DeviceKit.git)
+* [Firebase](https://firebase.google.com)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
